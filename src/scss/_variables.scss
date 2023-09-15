@@ -1,0 +1,37 @@
+@import 'core/mixins';
+
+$mainFont: 'chevin-pro', sans-serif;
+
+$orange: #ED5400;
+$black: #151720;
+$white: #F4EEE6;
+$light-grey: #E2DCD3;
+$grey: #88827B;
+
+body {
+  --wp--custom--page-padding: 24px;
+  --wp--custom--cover-padding: 36px;
+  --wp--custom--group-padding: 24px;
+  --wp--custom--header-padding: 24px 24px 24px;
+  --wp--custom--footer-padding: 48px 24px;
+
+  --wp--custom--font-size--h1: 45px;
+  --wp--custom--font-size--h2: 30px;
+  --wp--custom--font-size--h3: 26px;
+  --wp--custom--font-size--h4: 24px;
+  --wp--custom--font-size--h5: 20px;
+  --wp--custom--font-size--h6: 16px;
+
+  @include md {
+    --wp--custom--cover-padding: 64px;
+    --wp--custom--header-padding: 50px 24px 30px;
+    --wp--custom--footer-padding: 64px 24px;
+
+    --wp--custom--font-size--h1: 55px;
+    --wp--custom--font-size--h2: 40px;
+    --wp--custom--font-size--h3: 30px;
+    --wp--custom--font-size--h4: 24px;
+    --wp--custom--font-size--h5: 20px;
+    --wp--custom--font-size--h6: 16px;
+  }
+}
