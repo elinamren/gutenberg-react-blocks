@@ -1,5 +1,7 @@
 <?php
 
+include "src/blocks.php";
+
 add_action('wp_enqueue_scripts', function() {
   wp_enqueue_style('adeprimo', get_template_directory_uri().'/dist/style.css', array(), filemtime(get_template_directory().'/dist/style.css'));
   wp_enqueue_script('adeprimo', get_template_directory_uri().'/dist/script.js', array("jquery"), filemtime(get_template_directory().'/dist/script.js'), true);

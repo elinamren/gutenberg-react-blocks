@@ -18,41 +18,18 @@ Lägg in uppgifter och dina egna lokala inlogg
 
 ## Tema
 
-Gör ett nytt repo på bitbucket clona ner det i ditt tema och öppna upp i vs code
-Skapa en ny mapp i wordpress/wp-content/themes för ditt tema
+Gör ett nytt repo på bitbucket clona ner det i ditt tema och öppna upp i vs code  
+kopiera WP Starter (detta repot) och klistra in i ditt nya tema  
+Gå igenom och ändra namn om du vill (adeprimo nu)  
+Npm init (package.json skapas) klicka ok på alla dubbelkolla så det är rätt repo url
 
-Välj alternativ 1 eller 2
+### Package.json
 
-1
-kopiera WP Starter (detta repot)
-Gå igenom och ändra namn osv
-2
-Npm init (package.json skapas)
-Package.json
-Kopiera alla babel från miab
-Kopiera alla script från miab, byt ut miab mot sparklubben
-Skapa
-style.css
-Functions.php
-Theme.json
-Parts mapp
-Webpack.config.js
-Kopiera innehåll från miabs repo
-Gör mappar och filer för de i entry(rad 9)
-npm i
-2
-Blocks.js
-kopiera in import \* från miab
-Styles.scss kopiera allt från miab
-gör core mapp
-kopiera reset.scss
-gör base mapp
-gör component mapp
-patterns mapp
-Templates mapp
-Kopiera index.php
-npm run dev
+Kopiera scripts och devDependencies från packages.json i mappen "gör egen sen kopiera"
+
+## Starta utveckla
+
+node modules (npm i/yarn)
+
+npm run dev  
 Gå in i wp-admin -> themes -> byt till ditt nya sparklubben tema
-
-Skapa branch develop
-Pusha

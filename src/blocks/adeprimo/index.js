@@ -1,0 +1,1 @@
+import './block1/index.js';

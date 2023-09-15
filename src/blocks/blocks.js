@@ -1,1 +1,1 @@
-import './*/*.js'
+import './adeprimo/index.js';

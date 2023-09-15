@@ -1,8 +1,7 @@
-$screen-xs-min: 400px;
-$screen-sm-min: 600px;
-$screen-ms-min: 700px;
-$screen-md-min: 800px;
-$screen-lg-min: 990px;
+$screen-xs-min: 480px;
+$screen-sm-min: 782px;
+$screen-md-min: 900px;
+$screen-lg-min: 1023px;
 $screen-xl-min: 1200px;
 $screen-xxl-min: 1500px;
 
@@ -18,11 +17,6 @@ $screen-xxl-min: 1500px;
   }
 }
 
-@mixin ms {
-  @media (min-width: #{$screen-ms-min}) {
-    @content;
-  }
-}
 @mixin md {
   @media (min-width: #{$screen-md-min}) {
     @content;
@@ -43,6 +37,21 @@ $screen-xxl-min: 1500px;
 
 @mixin xxl {
   @media (min-width: #{$screen-xxl-min}) {
+    @content;
+  }
+}
+
+// BEM Element
+// Element
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+// Modifier
+@mixin m($modifier) {
+  &--#{$modifier} {
     @content;
   }
 }
